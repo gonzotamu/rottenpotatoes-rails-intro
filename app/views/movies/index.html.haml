@@ -4,9 +4,9 @@
 %table#movies
   %thead
     %tr
-      %th Movie Title
+      %th{class: current_page?('movies?title) && 'hilite'}= link_to 'Movie Title', '/movies?title'
       %th Rating
-      %th Release Date
+      %th{class: current_page?('movies?release) && 'hilite'}= link_to 'Release Date', '/movies?release'
       %th More Info
   %tbody
     - @movies.each do |movie|
