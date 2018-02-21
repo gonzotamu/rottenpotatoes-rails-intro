@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 #ruby '2.3.0'
 ruby '2.5.0'
 
+gem 'pg' # for Heroku deployment
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 #gem 'rails', '4.2.6'
 #added from piaza comments
@@ -59,7 +61,7 @@ group :development, :test do
 end
 
 group :production do
-  gem 'pg' # for Heroku deployment
+  #gem 'pg' # for Heroku deployment
   gem 'rails_12factor'
 end
 
