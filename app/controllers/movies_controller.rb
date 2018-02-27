@@ -30,15 +30,6 @@ class MoviesController < ApplicationController
     end 
 
     @movies = Movie.where(:rating => @rating_filter).order(@sort)
-
-  # if request.original_url =~ /title/
-  #    @movies = Movie.order('title ASC')
-  #  elsif request.original_url =~ /release/
-  #    @movies = Movie.order('release_date ASC')
-  #  else
-  #  @movies = Movie.all
-  #  end
-
   end
 
   def new
